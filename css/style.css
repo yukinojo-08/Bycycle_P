@@ -31,7 +31,7 @@ li {
   display: block;
 }
 
-.secsion-title {
+.section-title {
   display: inline;
   font-size: 2rem;
   text-align: center;
@@ -74,7 +74,7 @@ li {
 }
 
 /* Mainvisual */
-#mainbisual {
+#mainvisual {
   margin-bottom: 80px;
 }
 
@@ -115,5 +115,29 @@ li {
   }
   #about img {
     margin-right: 0;
+  }
+}
+
+/*-------------------------------------------
+Bicycle
+-------------------------------------------*/
+#bicycle ul {
+  display: flex;                   /* 画像を横並びに配置します */
+  justify-content: space-between;  /* 両端でそろえます */
+}
+#bicycle li {
+  width: 32%;
+}
+
+@media screen and (max-width: 600px) {
+  /*-------------------------------------------
+  Bicycle
+  -------------------------------------------*/
+  #bicycle ul {
+    flex-direction: column;  /* 画像を縦並びに配置します */
+  }
+  #bicycle li {
+    width: 100%;             /* 画像を横幅いっぱいまで表示します */
+    margin-bottom: 30px;
   }
 }
